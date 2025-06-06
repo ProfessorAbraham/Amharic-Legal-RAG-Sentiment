@@ -1,5 +1,5 @@
-from langchain.chains import RetrievalQA
-from langchain.llms import HuggingFacePipeline
+from langchain_community.chains import RetrievalQA
+from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 from transformers import pipeline
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -10,7 +10,7 @@ def load_generator_model():
     llm = HuggingFacePipeline(
         pipeline=pipeline(
             "text-generation",
-            model="google/flan-t5-large",  # You can change this to a better model
+            model="google/flan-t5-base",  # or "mrm8488/distilbert-base-uncased-finetuned-sst-2-english"
             model_kwargs={"temperature": 0.7, "max_length": 512},
             device=0 if torch.cuda.is_available() else -1,
         )
@@ -43,11 +43,11 @@ if __name__ == "__main__":
     qa_chain = load_rag_pipeline()
     
     # Query example: Ask about the right to freedom
-    response = qa_chain.run("በመጨረሻ ሀገር የተፈጥሮ ሀብት እና የህዝብ ባህል ይኖራል")
+    response = qa_chain.invoke("በመጨረሻ ሀገር የተፈጥሮ ሀብት እና የህዝብ ባህል ይኖራል")
     print("Query Result:")
-    print(response)
+    print(response["result"])
 
     # Another query: About the role of the Federal Government
-    response = qa_chain.run("የፌዴራሉ መንግሥት ምን መስፈርት አለበት?")
+    response = qa_chain.invoke("የፌዴራሉ መንግሥት ምን መስፈርት አለበት?")
     print("\nQuery Result (Federal Government):")
-    print(response)
+    print(response["result"])
