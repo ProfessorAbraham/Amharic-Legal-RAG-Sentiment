@@ -1,1 +1,0 @@
-# Amharic-Legal-RAG-Sentiment
