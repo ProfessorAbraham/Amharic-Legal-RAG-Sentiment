@@ -108,7 +108,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 Made with ❤️ for the Ethiopian AI & developer community.
 ```
 ```
----
 
 ### Next Steps After Updating:
 
