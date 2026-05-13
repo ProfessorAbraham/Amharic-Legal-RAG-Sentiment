@@ -5,7 +5,7 @@
 
 This project enables intelligent Amharic language applications for Ethiopian organizations, legal aid centers, government offices, and customer support systems.
 
----
+```
 
 ## ✨ Features
 
