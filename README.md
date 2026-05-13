@@ -30,7 +30,7 @@ This project enables intelligent Amharic language applications for Ethiopian org
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
+```
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
@@ -107,7 +107,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 Made with ❤️ for the Ethiopian AI & developer community.
 ```
-
+```
 ---
 
 ### Next Steps After Updating:
