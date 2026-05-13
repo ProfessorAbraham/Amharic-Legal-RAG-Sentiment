@@ -1,41 +1,35 @@
 
-```markdown
 # 🇪🇹 Amharic Legal RAG + Sentiment Analysis
 
-**Retrieval-Augmented Generation (RAG) pipeline for Amharic legal and complaint documents with Sentiment Analysis.**
+**A powerful Retrieval-Augmented Generation (RAG) system for Amharic legal documents and complaints with built-in Sentiment Analysis.**
 
-This project helps developers and organizations in Ethiopia build intelligent systems that can:
-- Understand and answer questions from Amharic legal/complaint texts
-- Analyze sentiment (positive, negative, neutral) in local languages
-- Support real-world use cases like automated complaint handling, legal aid chatbots, and customer service.
+This project enables intelligent Amharic language applications for Ethiopian organizations, legal aid centers, government offices, and customer support systems.
 
 ---
 
 ## ✨ Features
 
-- **Amharic-native RAG pipeline** (Retrieval-Augmented Generation)
-- **Sentiment Analysis** specifically tuned for Amharic text
-- **Vector Database** support (Chroma)
-- **Streamlit / Gradio ready** web interface
-- **Colab-friendly** setup (`colab_setup.ipynb`)
-- Clean project structure for easy extension
-- Focus on low-resource language (Amharic / Ethiopic)
+- Full **Amharic RAG pipeline** (Retrieval-Augmented Generation)
+- **Sentiment Analysis** (Positive / Negative / Neutral) for Amharic text
+- Vector database using **Chroma**
+- Ready-to-use web interface (Streamlit)
+- Google Colab support
+- Clean and well-organized project structure
+- Focused on low-resource language support (Amharic)
 
 ---
 
 ## 📁 Project Structure
 
 ```bash
-├── app/                    # Streamlit or web app
-├── data/                   # Sample legal & complaint datasets
-├── src/                    # Core RAG and processing code
-├── vector_db/              # Chroma vector database
-├── colab_setup.ipynb       # Easy Google Colab setup
+├── app/                    # Streamlit web application
+├── data/                   # Sample legal and complaint datasets
+├── src/                    # Core RAG and processing logic
+├── vector_db/              # Chroma vector store
+├── colab_setup.ipynb       # Easy Colab notebook
 ├── requirements.txt
-└── README.md
-```
-
----
+├── README.md
+└── LICENSE
 
 ## 🚀 Quick Start
 
